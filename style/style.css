@@ -83,12 +83,18 @@ section {
   border: none;
   background-color: white;
   padding-left: 50px;
+  padding-bottom: 50px;
 }
 .names-field,
 .email-phone,
 .password-confirmpwd {
   display: flex;
   flex-direction: row;
+}
+.fname,
+.email-field,
+.pass {
+  margin-right: 100px;
 }
 
 .submit-form {
@@ -108,6 +114,22 @@ section {
   text-decoration: none;
   color: var(--light-olive, olive);
 }
-label {
+.create-account label {
   display: block;
+}
+.create-account input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+}
+
+.create-account input:invalid {
+  border: 1px solid red;
+}
+.create-account input:valid {
+  border: 1px solid lightgreen;
+}
+.create-account input:focus {
+  border: 1px solid lightskyblue;
 }
