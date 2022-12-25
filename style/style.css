@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: norse-bold;
+  src: url(../assets/Norse-Bold.otf);
+}
+
+body {
+  margin: 0;
+  font-family: "norse-bold", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.left-side {
+  height: 100vh;
+  width: 40vw;
+  position: relative;
+}
+.left-side .bg-image {
+  background-image: url(../assets/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.odin-img-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+}
+.odin-logo {
+  height: 100%;
+}
+.odin-img-bg::after {
+  content: "odin";
+  font-size: 100px;
+  color: white;
+}
