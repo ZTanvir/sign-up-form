@@ -84,6 +84,7 @@ section {
   background-color: white;
   padding-left: 50px;
   padding-bottom: 50px;
+  box-shadow: -10px 17px 8px -20px #110;
 }
 .names-field,
 .email-phone,
