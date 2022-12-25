@@ -45,7 +45,7 @@ section {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 30%;
+  top: 45%;
 }
 
 .left-side .odin-logo {
@@ -90,11 +90,16 @@ section {
 .password-confirmpwd {
   display: flex;
   flex-direction: row;
+  column-gap: 100px;
 }
+
 .fname,
+.lname,
 .email-field,
-.pass {
-  margin-right: 100px;
+.phone-field,
+.pass,
+.c-pass {
+  width: 50%;
 }
 
 .submit-form {
@@ -122,6 +127,7 @@ section {
   border-radius: 5px;
   border: 1px solid #e5e7eb;
   outline: none;
+  width: 100%;
 }
 
 .create-account input:invalid {
