@@ -1,9 +1,16 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --light-olive: #596d48;
+}
 @font-face {
   font-family: norse-bold;
   src: url(../assets/Norse-Bold.otf);
+}
+form {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 100%;
 }
 
 body {
@@ -12,11 +19,17 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+}
+
 .left-side {
   height: 100vh;
-  width: 40vw;
+  min-width: 40vw;
   position: relative;
 }
+
 .left-side .bg-image {
   background-image: url(../assets/halie-west-25xggax4bSA-unsplash.jpg);
   background-repeat: no-repeat;
@@ -24,7 +37,8 @@ body {
   background-position: center;
   height: 100%;
 }
-.odin-img-bg {
+
+.left-side .odin-img-bg {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100px;
   width: 100%;
@@ -33,11 +47,67 @@ body {
   position: absolute;
   top: 30%;
 }
-.odin-logo {
+
+.left-side .odin-logo {
   height: 100%;
 }
-.odin-img-bg::after {
+
+.left-side .odin-img-bg::after {
   content: "odin";
   font-size: 100px;
   color: white;
+}
+
+.right-side {
+  height: 100vh;
+  display: flex;
+  background-color: #eee;
+  flex-direction: column;
+  justify-content: center;
+}
+.create-account fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  background-color: red;
+}
+
+.right-side article {
+  background-color: #eee;
+  font-family: "Courier New";
+  padding-left: 50px;
+  padding-bottom: 40px;
+}
+
+.create-account fieldset {
+  border: none;
+  background-color: white;
+  padding-left: 50px;
+}
+.names-field,
+.email-phone,
+.password-confirmpwd {
+  display: flex;
+  flex-direction: row;
+}
+
+.submit-form {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.submit-form button {
+  padding: 15px 50px;
+  background-color: var(--light-olive, olive);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.login-msg a {
+  text-decoration: none;
+  color: var(--light-olive, olive);
+}
+label {
+  display: block;
 }
